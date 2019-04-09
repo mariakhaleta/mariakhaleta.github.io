@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel ="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="background"><img src="img/4copy.jpg" style="position: relative; width: 100%;">
+    </div>
+        <header>
+            <a href="#default" class="logo">Vincent Van Gogh</a>
+            <div class="header-right">
+              <a href="#home" onclick="show('home')">Home</a>
+              <a class="active" href="#collection" onclick="show('gallery')">Collection</a>
+              <a href="#about"  onclick="show('about')">About</a>
+            </div>
+        </header>
+
+        <div id="main_place">
+            
+          </div>
+          
+        <div class ="gallery" style="width: 70%; margin-top: 10px;">
+            <div class="photo1"><img src="img/best.jpg" style="width:100% ">
+                <h3>The Starry Night, 1889</h3>
+                <h4>Vincent van Gogh</h4>
+<!-- 
+                <h6>The Starry Night is an oil on canvas by the Dutch post-impressionist painter Vincent van Gogh. 
+                     Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence,
+                     just before sunrise, with the addition of an idealized village.
+                     It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. 
+                     Regarded as among Van Gogh's finest works The Starry Night is one of the most recognized paintings
+                     in the history of Western culture.</h6> -->
+            </div>
+            <div class="photo2"><img src="img/1.jpg" style="width:100%">
+                <h3>Almond Blossom, 1890</h3>
+                <h4>Vincent van Gogh</h4>
+            </div>
+            <div class="photo3"><img src="img/2.jpg" style="width:100%">
+                <h3>The Bedroom, 1888</h3>
+                <h4>Vincent van Gogh</h4>
+            </div>
+            <div class="photo4"><img src="img/cyp.jpg" style="width:100%">
+                <h4> Cypresses </h4>
+                <h4>Vincent van Gogh</h4>
+            </div>
+            <div class="photo5"><img src="img/13.jpg" style="width:100%">
+                <h3> Peach Tree </h3>
+                <h4>Vincent van Gogh</h4>
+            </div>
+            <div class="photo6"><img src="img/3.jpg" style="width:100%">
+                <h4>Irises, 1890</h4>
+                <h4>Vincent van Gogh</h4>
+            </div>
+            <div class="photo7"><img src="img/5.jpg" style="width:100%">
+                <h4>Sunflowers, 1889</h4>
+                <h4>Vincent van Gogh</h4>
+            </div>
+
+        </div>
+        <div class="home" style="display:none;">
+            <h1>Visit the Museum</h1>
+           <h2>Step into Van Gogh's world. Explore the world’s largest collection of works by Vincent van Gogh at the Van Gogh Museum in Amsterdam.</h2>
+        </div>
+
+        <div class="about" style="display:none;">
+            <h1>Visit the Museum</h1>
+           <h2>Step into Van Gogh's world. Explore the world’s largest collection of works by Vincent van Gogh at the Van Gogh Museum in Amsterdam.</h2>
+        </div>
+
+        <script>
+            function show(param_div_id) {
+              document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
+            }
+          </script>
+        <hr>
+    </hr>
+        <footer>
+            <div class="footer">
+                 <h3>From Mariia with ❤️❤️
+                 </h3>
+            </div>
+        </footer>
+</body>
+</html>
